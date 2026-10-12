@@ -40,8 +40,7 @@ public class SaleSystem {
 
         //Calculate final cost
         double finalCost = selectedPrice + (selectedLoad.equals("yes") ? loadUpcharge : 0);
-        if (finalDiscount != 0)
-            finalCost -= (finalCost * finalDiscount);
+        if (finalDiscount != 0) {finalCost -= (finalCost * finalDiscount);}
 
         System.out.println("The final cost of your sandwich is: " + finalCost);
     }
